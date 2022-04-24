@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!--
+/**
+ *
+ * @category  Sabbir
+ * @package   Walcart_Otplogin
+ * @author    Sabbir Hossain
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+       <css src="Walcart_Otplogin::css/intlTelInput.css"/>
+       <css src="Walcart_Otplogin::css/custom.css"/>
+       <script src="Walcart_Otplogin::js/utils.js"/>
+   </head>
+    <body>
+        <referenceBlock name="register-link">
+            <arguments>
+                <argument name="class" xsi:type="string">customer-register-link</argument>
+            </arguments>
+        </referenceBlock>
+  <!--       <referenceBlock name="authorization-link-login">
+            <arguments>
+                <argument name="class" xsi:type="string">customer-login-link</argument>
+            </arguments>
+        </referenceBlock> -->
+        <referenceContainer name="before.body.end">
+            <!-- <block class="Walcart\Otplogin\Block\Form\Login" ifconfig="walcart_otplogin/general/enabled" name="customer-popup-login" template="Walcart_Otplogin::login.phtml" /> -->
+            <block class="Walcart\Otplogin\Block\Form\Register" ifconfig="walcart_otplogin/general/enabled" name="customer-popup-register" template="Walcart_Otplogin::register.phtml" />
+            <block class="Magento\Framework\View\Element\Template" ifconfig="walcart_otplogin/general/enabled" name="customer-popup-otp" template="Walcart_Otplogin::otp.phtml"/>
+        </referenceContainer>
+    </body>
+</page>

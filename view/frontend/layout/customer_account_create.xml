@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!--
+/**
+ *
+ * @category  Sabbir
+ * @package   Walcart_Otplogin
+ * @author    Sabbir Hossain
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+       <css src="Walcart_Otplogin::css/custom.css"/>
+       <css src="Walcart_Otplogin::css/intlTelInput.css"/>
+       <script src="Walcart_Otplogin::js/utils.js"/>
+   </head>
+    <body>
+        <referenceContainer name="form.additional.info">
+            <block class="Magento\Framework\View\Element\Template" ifconfig="walcart_otplogin/general/enabled" name="form_additional_info_customer" template="Walcart_Otplogin::form/mobileregister.phtml" cacheable="false"/>
+        </referenceContainer>
+    </body>
+</page>
