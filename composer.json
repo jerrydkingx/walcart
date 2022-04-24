@@ -4,6 +4,7 @@
     "require": {
         "twilio/sdk": "^6.6"
     },
+    "minimum-stability": "dev",
     "type": "magento2-module",
     "version": "1.0.0",
     "license": [
