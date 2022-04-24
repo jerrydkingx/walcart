@@ -1,6 +1,6 @@
 {
     "name": "walcart/otplogin",
-    "description": "Magento2 Login with OTP",
+    "description": "Walcart OTP",
     "require": {
         "twilio/sdk": "^6.6"
     },
